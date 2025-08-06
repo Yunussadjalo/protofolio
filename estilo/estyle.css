@@ -22,6 +22,9 @@ body{
 header{
    width: 100%; 
    padding: 40px 0;
+   position: fixed; /* Fixa o header no topo */
+   top: 0; /* Coloca o header no topo da página */
+   left: 0; /* Coloca o header no início da página */
 }
 
 header .cabecalho{
@@ -69,5 +72,43 @@ header .cabecalho{
   background-color: white;  
   color:black;
   transition: 0.5s;
+}
+
+/* Estilo do banner */
+
+section.banner-site {
+    height: 98vh;
+    background-image: url('../imagem/fundo1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-site .interface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+.banner-site .texto-banner h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.banner-site .texto-banner h1 span{
+    display: block;
+    font-weight: 200;
+}
+
+.banner-site .texto-banner p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.banner-site .texto-banner p span{
+    display: block;
 }
 
