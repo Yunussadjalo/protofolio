@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: black;
+}
+
+.cabecalho{
+    max-width: 1280px;
+    margin: 0 auto;
+} 
+
+/* Estilo do header */
+
+header{
+   width: 100%; 
+   padding: 40px 0;
+}
+
+header .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 50px;
+}
+
+.menu-desktop nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-desktop nav ul li{
+    margin: 0 40px;
+}
+
+.menu-desktop nav ul li a {
+    color: white;
+    text-decoration: none;
+    /* converti links de inline level para inline block para que possa ace/itar o efeito de transform*/
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.06);
+}
+
+.btn-radio button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-radio button:hover{
+  background-color: white;  
+  color:black;
+  transition: 0.5s;
+}
+
