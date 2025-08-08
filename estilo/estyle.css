@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/* Paleta de Cores 
+- Rosa: #d98179
+- Rosa Claro: #f2c8c4
+- Vermelho: #590202
+- Vermelho Claro: #8c0303
+- Vermelho Escuro: #260101
+*/
+
 *{
     font-family: "Poppins", sans-serif;
     margin: o;
@@ -9,7 +17,7 @@
 
 body{
 
-    background-color: black;
+    background-color: white;
 }
 
 .cabecalho{
@@ -33,23 +41,30 @@ header .cabecalho{
     align-items: center;
 }
 
-.logo img{
-    max-width: 50px;
+header .logo{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.menu-desktop nav ul{
+header .logo img{
+    max-width: 70px;
+}
+
+header .menu-desktop nav ul{
     list-style: none;
-    display: flex;
+    /* display: flex; */
 }
 
 .menu-desktop nav ul li{
+    display: inline-block;
     margin: 0 40px;
 }
 
 .menu-desktop nav ul li a {
     color: white;
     text-decoration: none;
-    /* converti links de inline level para inline block para que possa ace/itar o efeito de transform*/
+    /* converti links de inline level para inline block para que possa aceitar o efeito de transform*/
     display: inline-block;
     transition: .2s;
 }
@@ -78,7 +93,8 @@ header .cabecalho{
 
 section.banner-site {
     height: 98vh;
-    background-image: url('../imagem/fundo1.webp');
+    background-color: #8c0303;
+    /*background-image: url('../imagem/fundo1.webp');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,10 +121,121 @@ section.banner-site {
 
 .banner-site .texto-banner p{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400; 
 }
 
 .banner-site .texto-banner p span{
     display: block;
 }
 
+/* Estilo principal */
+
+div.main-layout{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
+    max-width: 1000px; /* Define a largura máxima do layout principal */
+}
+
+.principal{
+    flex: 0 1 800px; /* Permite que a div principal cresça e ocupe o espaço disponível */
+    height: 100%;
+    width: 100%;
+    background-color:gray;
+    
+}
+
+.interface{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center ;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo do artigo 1 */
+#art1 {
+    flex: 0 0 600px; /* Permite que o artigo ocupe o espaço necessário */
+
+}
+
+#art1 .img-itens img{
+    max-width: 100%;
+    height: 100%;
+}
+
+#art2 {
+    flex: 0 0 300px;
+}
+
+#art2 .img-itens img{
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#art3 {
+    flex: 0 0 300px; /* Permite que o artigo ocupe o espaço necessário */
+}
+
+#art3 .img-itens img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+#art4 {
+    flex: 0 0 300px; /* Permite que o artigo ocupe o espaço necessário */
+}
+
+#art4 .img-itens img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#art5 {
+    flex: 0 0 300px; /* Permite que o artigo ocupe o espaço necessário */
+}
+
+#art5 .img-itens img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.side-bar{
+    width: 300px; /* ajuste conforme necessário */
+    height: 100%;
+    background-color: lightgrey;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.side-bar.interface{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.side-bar h2{
+    text-align: center;
+    color: #260101;
+}
+
+.side-bar ul{
+    list-style: none;
+    margin-top: -20px;
+}
+.side-bar ul li{
+    margin-right: auto;
+}
+
+.side-bar ul li a{
+    text-decoration: none;
+    color: #260101;
+    padding: 10px;
+    display: block;
+    
+}
