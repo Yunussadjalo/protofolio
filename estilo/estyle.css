@@ -17,7 +17,7 @@
 
 body{
 
-    background-color: white;
+    background-color: #fff;
 }
 
 .cabecalho{
@@ -134,6 +134,9 @@ div.main-layout{
     display: flex;
     flex-flow: row;
     align-items: flex-start;
+
+    background-color: #fff;
+    padding: 80px ;
     margin: 50px;
     margin-left: auto;
     margin-right: auto; /* Centraliza horizontalmente */
@@ -141,25 +144,24 @@ div.main-layout{
 }
 
 .principal{
-    flex: 0 1 800px; /* Permite que a div principal cresça e ocupe o espaço disponível */
+    flex: 800px; 
     height: 100%;
-    width: 100%;
-    background-color:gray;
+    /*width: 100%;*/
+    background-color: #f3f3f3;
     
 }
 
 .interface{
     display: flex;
     flex-flow: row wrap;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 
-/* Estilo do artigo 1 */
 #art1 {
-    flex: 0 0 600px; /* Permite que o artigo ocupe o espaço necessário */
+    flex: 0 0 500px; /* Permite que o artigo ocupe o espaço necessário */
 
 }
 
@@ -169,7 +171,7 @@ div.main-layout{
 }
 
 #art2 {
-    flex: 0 0 300px;
+    flex: 0 0 250px;
 }
 
 #art2 .img-itens img{
@@ -179,7 +181,7 @@ div.main-layout{
 }
 
 #art3 {
-    flex: 0 0 300px; /* Permite que o artigo ocupe o espaço necessário */
+    flex: 0 0 250px; /* Permite que o artigo ocupe o espaço necessário */
 }
 
 #art3 .img-itens img{
@@ -189,7 +191,7 @@ div.main-layout{
 }
 
 #art4 {
-    flex: 0 0 300px; /* Permite que o artigo ocupe o espaço necessário */
+    flex: 0 0 250px; /* Permite que o artigo ocupe o espaço necessário */
 }
 
 #art4 .img-itens img{
@@ -198,7 +200,7 @@ div.main-layout{
 }
 
 #art5 {
-    flex: 0 0 300px; /* Permite que o artigo ocupe o espaço necessário */
+    flex: 0 0 250px; /* Permite que o artigo ocupe o espaço necessário */
 }
 
 #art5 .img-itens img{
@@ -206,36 +208,114 @@ div.main-layout{
     max-height: 100%;
 }
 
+/* Estilo da barra lateral */
 .side-bar{
-    width: 300px; /* ajuste conforme necessário */
+    width: 400px; /* ajuste conforme necessário */
     height: 100%;
-    background-color: lightgrey;
-    padding: 20px;
+    background-color: #f3f3f3;
+    padding: 10px;
     margin-left: 30px;
 }
 
-.side-bar.interface{
+.side-bar .interface{
+    background-color: red;
+}
+
+.side-bar .resumo{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-flow: column;
+    gap: 10px;
+    padding: 10px;
 }
 .side-bar h2{
     text-align: center;
     color: #260101;
 }
 
-.side-bar ul{
-    list-style: none;
-    margin-top: -20px;
-}
-.side-bar ul li{
-    margin-right: auto;
+.resumo .itens-resumo{
+    padding: 10px;
 }
 
-.side-bar ul li a{
-    text-decoration: none;
+.resumo #resumo1 {
+    flex: 0 1 100%;
+    height: 100%;
+
+}
+
+.resumo #resumo2 {
+
+}
+
+.resumo #resumo3 {
+
+}
+
+.side-bar .resumo p{
+    font-size: 1.2em;
+    line-height: 1.5;
     color: #260101;
+}
+
+/* Estilo da seção de vídeos */
+.videos {
+    background-color: #260101;
+    padding: 80px 0;
+    margin: 50px 0;
+}
+
+.videos h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.videos .interface {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.videos .itens-video {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 10px;
-    display: block;
-    
+    margin: 10px 0;
+}
+
+.videos .itens-video h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.videos .itens-video p {
+    font-size: 1em;
+    margin: 0;
+}
+
+#video1 {
+    flex: 0 0 300px; /* Permite que o vídeo ocupe o espaço necessário */
+
+}
+
+#video2 {
+    flex: 0 0 300px; /* Permite que o vídeo ocupe o espaço necessário */
+
+}
+
+#video3 {
+    flex: 0 0 300px; /* Permite que o vídeo ocupe o espaço necessário */
+}
+
+/* Estilo da rodapé */
+footer {
+    background-color: #8c0303;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top:
+}
+
+footer p {
+    margin: 0;
 }
